@@ -1,9 +1,9 @@
 /* Service Worker – EDEKA Food Academy Seminar-Finder
    - Seite & Skripte: erst Netz, sonst Zwischenspeicher (Updates kommen sofort an)
    - Bilder & Schriften: sofort aus dem Zwischenspeicher, im Hintergrund aktualisieren
-   - Fremde Seiten (Vimeo, Instagram …) werden nicht angefasst
+   - Fremde Seiten (z. B. Vimeo) werden nicht angefasst
    Bei grundlegenden Änderungen VERSION erhöhen → alter Zwischenspeicher wird gelöscht. */
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = 'food-academy-' + VERSION;
 const PRECACHE = [
   './',
@@ -37,7 +37,8 @@ self.addEventListener('activate', e => {
 const networkFirst = async req => {
   const cache = await caches.open(CACHE);
   try {
-    const res = await fetch(req);
+    // cache:'no-cache' = immer beim Server nachfragen (sonst liefert der Browser bis zu 10 Min. alte Kopien von GitHub Pages)
+    const res = await fetch(req, { cache: 'no-cache' });
     if (res.ok) cache.put(req, res.clone());
     return res;
   } catch (err) {
