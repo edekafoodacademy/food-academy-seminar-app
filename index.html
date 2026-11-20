@@ -924,16 +924,6 @@ h1,h2,h3{font-weight:700;letter-spacing:-.03em}
 .hl-steps span{display:flex;align-items:center;gap:10px;font-size:14.5px;color:var(--muted);opacity:.45;transition:opacity .35s,color .35s}
 .hl-steps span svg{width:20px;height:20px;padding:3px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);stroke:transparent;fill:none;stroke-width:3;transition:all .4s var(--spring)}
 .hl-steps span.ok{opacity:1;color:#fff}.hl-steps span.ok svg{background:var(--y);border-color:var(--y);stroke:#17181a;transform:scale(1.1)}
-/* instagram */
-.igwrap{margin-top:14px}
-.igcard{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:22px;text-decoration:none;color:#fff;position:relative;overflow:hidden;background:linear-gradient(120deg,#3b1d5c 0%,#7a2a73 35%,#c7345f 65%,#f08a3c 100%);box-shadow:0 18px 40px -22px rgba(199,52,95,.8);transition:transform .5s var(--spring)}
-.igcard:active{transform:scale(.97)}
-.igcard::after{content:"";position:absolute;inset:0;background:radial-gradient(80% 120% at 100% 0%,rgba(255,255,255,.18),transparent 60%);pointer-events:none}
-.igic{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.18);backdrop-filter:blur(4px)}
-.igic svg{width:25px;height:25px;stroke:#fff;fill:none;stroke-width:2}
-.igtx{flex:1;min-width:0}.igtx small{display:block;font-size:12px;opacity:.85;font-weight:600}.igtx b{display:block;font-family:var(--hf);font-size:18px;font-weight:700;letter-spacing:-.01em}
-.igx{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;opacity:.85}
-.reg .igwrap{margin:22px 0 4px}
 /* semiro link */
 .mailplate.mlink{display:block;text-decoration:none;color:inherit;transition:border-color .3s,transform .4s var(--spring)}
 .mailplate.mlink:active{transform:scale(.98)}
@@ -1031,17 +1021,6 @@ a.cta.semiro{text-decoration:none}a.cta.semiro svg{width:19px;height:19px;stroke
 .path.p3{background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(40,42,46,.95) 60%)}
 .opt.on{background:linear-gradient(135deg,rgba(255,210,0,.24),rgba(255,180,0,.06))!important}
 .fchip.on{box-shadow:0 6px 16px -8px var(--c)}
-/* ===== instagram ===== */
-.igcard2{display:flex;align-items:center;gap:13px;padding:13px 14px;border-radius:22px;text-decoration:none;color:#fff;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.1);position:relative;overflow:hidden;transition:transform .5s var(--spring)}
-.igcard2::before{content:"";position:absolute;inset:0;background:radial-gradient(90% 140% at 0% 50%,rgba(214,41,118,.22),transparent 55%);pointer-events:none}
-.igcard2:active{transform:scale(.97)}
-.igav{position:relative;flex:none;width:58px;height:58px;border-radius:50%;padding:3px;background:conic-gradient(from 200deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5,#feda75);animation:igspin 6s linear infinite}
-.igav img{width:100%;height:100%;border-radius:50%;border:2.5px solid #1c1e21;display:block;animation:igspin 6s linear infinite reverse}
-@keyframes igspin{to{transform:rotate(360deg)}}
-.igtx2{position:relative;flex:1;min-width:0}.ign{display:flex;align-items:center;gap:6px;font-weight:700;font-size:15.5px;letter-spacing:-.01em}
-.igmini{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;opacity:.8}
-.igtx2 small{display:block;font-size:12px;color:var(--muted);margin-top:2px;line-height:1.35}
-.igfollow{position:relative;flex:none;padding:9px 16px;border-radius:12px;font-weight:700;font-size:13.5px;color:#fff;background:linear-gradient(90deg,#f58529,#dd2a7b 50%,#8134af);box-shadow:0 8px 18px -8px rgba(221,42,123,.8)}
 /* ===== video library ===== */
 .nfsub{padding:2px 18px 8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#ff9a3c}
 button.nftile{padding:0;border:0;text-align:start}
@@ -1580,9 +1559,6 @@ button.nftile{padding:0;border:0;text-align:start}
  .s2cats{gap:20px}
  .s2cv{height:clamp(220px,20vw,300px)}
  .s2cat{padding:18px 18px 22px}.s2cat b{font-size:20px}
- .st2 .s2sec:nth-of-type(4){display:grid;grid-template-columns:1.4fr 1fr;gap:20px;align-items:stretch}
- .st2 .s2sec:nth-of-type(4)>.s2h{grid-column:1/-1}
- .st2 .s2sec:nth-of-type(4) .igwrap{margin:0;display:flex;align-items:stretch}.st2 .s2sec:nth-of-type(4) .igwrap>a{flex:1}
  .qgrid{grid-template-columns:1fr 1fr;gap:18px}
  .qtile{padding:22px}
  .foot{margin:80px var(--dpx) 0;font-size:13px}
@@ -1813,7 +1789,7 @@ const LITE=c=>c==='#C5C84F';
 const CAT_ING={theke:'schinken',og:'tomaten',getraenke:'pfeffer',backwaren:'parmesan',kasse:'knolle',weitere:'parmesan',persoenlich:'basilikum',fuehrung:'avocado',pflicht:'knoblauch',digital:'spiess',expert:'basilikum2'};
 const KTOC=[['Titel','#FFD200',1],['Inhalt','#FFD200',4],['Kapitel 1 · QuickGuide: Lernen','#FFD200',8],['Kontakte','#FFD200',13,1],['Kapitel 2 · Persönliche & soziale Kompetenz','#65B32E',27],['Kapitel 3 · Fachliche Kompetenz','#2E7DD7',41],['Bedientheke','#EC672F',42,1],['Obst und Gemüse','#2E7DD7',84,1],['Getränke','#2E7DD7',95,1],['Backwaren','#2E7DD7',101,1],['Kasse','#2E7DD7',107,1],['Weitere Sortimentsbereiche','#2E7DD7',113,1],['Kapitel 4 · Pflicht, Recht & Digitales','#D0261F',119],['Kapitel 5 · Führung & BWL','#C8137F',145],['Kapitel 6 · LUNAR Prozess-Schulung','#0099D6',171],['Kapitel 7 · Expert','#C5C84F',187],['Kapitel 8 · Fortbildungsprogramme & Highlights','#7B2182',195]];
 const IC={
- insta:'<rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor"/>',
+ 
  ext:'<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
  trophy:'<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8"/>',
  play:'<path d="M7 4.5v15l12-7.5z"/>',
@@ -2101,9 +2077,7 @@ function vStart(){const n=(k,t)=>`<div class="s2h rv"><span class="s2n">${k}</sp
     <button class="s2cat rv" data-go="katalog" style="--c:#FFD200"><span class="s2cv"><img src="katalog/t-k3.webp" alt=""><img src="katalog/t-k2.webp" alt=""><img src="katalog/t-cover.webp" alt=""></span><b>${T('Seminarkatalog 2027')}</b><small>${T('{0} Seiten',216)} · ${T('alle Kapitel')}</small><span class="s2go">${svg('book')}${T('Öffnen')}</span></button>
     <button class="s2cat rv" data-go="katalog-fresh" style="--c:#EC672F"><span class="s2cv"><img src="fresh/t-018a.webp" alt=""><img src="fresh/t-010a.webp" alt=""><img src="fresh/t-001.webp" alt=""></span><b>${T('Fresh-Broschüre 2027')}</b><small>${T('Bedientheke')} · ${hearts(4,1,4)}</small><span class="s2go">${svg('flame')}${T('Öffnen')}</span></button>
    </div></section>
-  <section class="s2sec">${n('03',T('Fresh Digital & Social'))}
-   ${fdTeaser()}<div class="igwrap rv">${igCard()}</div></section>
-  <section class="s2sec">${n('04',T('Service'))}
+  <section class="s2sec">${n('03',T('Service'))}
    <div class="qgrid"><button class="qtile glass rv" data-go="kontakt"><span class="qi">${svg('phone')}</span><span><b>${T('Anmeldung & Kontakt')}</b><span class="s">${T('E-Mail, Semiro, Ansprechpartner')}</span></span></button>
     <button class="qtile glass rv" data-go="level"><span class="qi">${svg('star')}</span><span><b>${T('Die Level')}</b><span class="s">${T('Einsteiger bis Fresh-Master')}</span></span></button></div></section>
   <div class="foot">EDEKA Food Academy · Nordbayern · Sachsen · Thüringen<br>${T('Anmeldung')}: ${MAIL} · ${PHONE}<br>${T('Alle Angaben aus dem Seminarkatalog 2027.')}</div></div>`}
@@ -2111,8 +2085,7 @@ const FAN=[['Titel','#FFD200','t-cover',1],['QuickGuide','#FFD200','t-k1',10],['
 
 function freshSection(){return `<section class="fsec rv"><div class="kicker" style="color:#EC672F">${T('Bedientheke · Food Academy Fresh')}</div><h2>${T('Die Fresh-Broschüre<br>zum Blättern.')}</h2>
   <button class="fcover glass" data-go="katalog-fresh"><span class="fstack"><img src="fresh/001.webp" alt=""><img src="fresh/018a.webp" alt=""><img src="fresh/011b.webp" alt=""></span>
-   <span class="fct"><b>${T('Fresh-Broschüre 2027')}</b><small>${T('Alle Theken-Seminare mit den 4 Fresh-Stufen')}</small><span class="fh">${hearts(4,1,4)}</span><span class="open">${svg('book')} ${T('Broschüre öffnen')}</span></span></button>
-  ${fdTeaser()}</section>`}
+   <span class="fct"><b>${T('Fresh-Broschüre 2027')}</b><small>${T('Alle Theken-Seminare mit den 4 Fresh-Stufen')}</small><span class="fh">${hearts(4,1,4)}</span><span class="open">${svg('book')} ${T('Broschüre öffnen')}</span></span></button></section>`}
 const FFAN=[['Titel','#EC672F','001',1],['Fresh Digital','#FFB000','004a',6],['Grundlagen & Onboarding','#EC672F','006a',10],['Fleisch & Grillschule','#E2452F','010a',18],['Wurst','#C8372D','018a',34],['Käse','#F2B632','021a',40],['Fisch','#2E7DD7','026a',50],['Führung','#C8137F','029a',56],['Ausbildung & Azubis','#0099D6','033a',64]];
 function ktabs(cur){return `<div class="ktabs"><button class="${cur==='kat'?'on':''}" data-go="katalog">${svg('book')}${T('Seminarkatalog 2027')}</button><button class="fr ${cur==='fresh'?'on':''}" data-go="katalog-fresh">${svg('flame')}${T('Fresh-Broschüre 2027')}</button><i class="ktab-ind${cur==='fresh'?' r':''}"></i></div>`}
 
@@ -2122,8 +2095,6 @@ const FDV=[['meat','Fleisch','Zuschnitt, Reifung, Garmethoden'],['wurst','Wurst 
 const VLIB={handgriffe:{t:'100 Handgriffe',s:'Die wichtigsten Handgriffe – kurz und direkt aus der Praxis',items:[]},
             lege:{t:'Legetechniken',s:'Platten und Theke professionell legen und präsentieren',items:[]}};
 const VIDEOS=[...VLIB.handgriffe.items,...VLIB.lege.items];
-function igCard(){return `<a class="igcard2" href="https://www.instagram.com/edeka_foodacademy/" target="_blank" rel="noopener"><span class="igav"><img src="fresh/fa-insta.webp" alt="EDEKA Food Academy"></span><span class="igtx2"><span class="ign">edeka_foodacademy ${svg('insta','igmini')}</span><small>${T('Live dabei: Seminare, Tricks & Fresh-Momente')}</small></span><span class="igfollow">${T('Folgen')}</span></a>`}
-function fdTeaser(){return `<button class="fdteaser" data-go="fresh-digital"><span class="fdt-bg"></span><img class="fdt-logo" src="fresh/fd-logo.webp" alt="Fresh Digital"><span class="fdt-tx"><b>${T('100 Handgriffe-Videos, Quiz & mehr')}</b><span>${T('Jetzt entdecken')} ${svg('arrow')}</span></span></button>`}
 const VIMEO_HG='https://vimeo.com/showcase/12013614';
 const VIMEO_LEGE=['https://vimeo.com/showcase/11967308','https://vimeo.com/showcase/12013580','https://vimeo.com/showcase/12013582'];
 const NFX=`target="_blank" rel="noopener"`;
@@ -2159,7 +2130,6 @@ function vFreshDigital(){const tab=S.fdTab||'hg';const alb=(history.state&&histo
    <div class="fdlist" style="padding-top:4px">
     <a class="nxcard" href="https://www.next.edeka/nst_" target="_blank" rel="noopener"><img class="nxlogo" src="fresh/next-logo.webp" alt="EDEKA next"><span class="nxtx"><small>${T('Blended Learning')}</small><b>${T('Wissen, das zu dir passt.')}</b><span class="nxs">${T('Unsere Seminare enden nicht nach dem letzten Seminartag: Auf EDEKA next bekommst du passende Lerninhalte, Videos und Unterlagen direkt vor und nach deinem Seminar – zum Vertiefen, Wiederholen und sofort im Markt Anwenden.')}</span><span class="nxtags"><em>${T('Einfach.')}</em><em>${T('Flexibel.')}</em><em>${T('Direkt verfügbar.')}</em></span><span class="nxgo">${svg('ext')}${T('Zu EDEKA next')}</span><span class="nxid">${svg('shield')}${T('Zugang mit EDEKA-ID & Passwort')}</span></span></a>
     <a class="wzcard" href="https://wizzup.quizzer-server.de/" target="_blank" rel="noopener"><span class="wzlogo">Wizz<br>Up!</span><span class="wztx"><b>${T('Lernen, spielen, Wissen pushen!')}</b><small>${T('WizzUp! macht Lernen zum Quiz-Duell – im Browser oder per App. Mit deinem next-Zugang startest du sofort.')}</small><span class="wzgo">${svg('trophy')}${T('Zur Challenge')}</span></span></a>
-    ${igCard()}
     <button class="lnk glass" data-act="fresh" data-p="6" style="margin:0;width:100%"><span class="pi">${svg('book')}</span><span><b>${T('In der Broschüre')}</b><span class="s">Fresh Digital · ${T('Seite {0}',6)}</span></span>${svg('chev','arr')}</button>
    </div><div style="height:calc(40px + var(--safe-b))"></div></div>`}
 /* In-App-Player für Fresh Digital: Vimeo-Embed, „Als Nächstes“ aus derselben Reihe, Zurück-Taste schließt */
@@ -2226,7 +2196,7 @@ function vKatalogFresh(){
    <div class="fanlabel"><span class="fdot"></span><b id="fname"></b><em id="fpage"></em></div>
    <div class="fanup">${svg('arrow')}<span>${T('Nach oben wischen')}</span></div>
    <div class="fandots">${FFAN.map((_,k)=>`<i data-fd="${k}"></i>`).join('')}</div>
-   <div class="pad">${fdTeaser()}<div style="height:calc(30px + var(--safe-b))"></div></div></div>`}
+   <div class="pad"><div style="height:calc(30px + var(--safe-b))"></div></div></div>`}
 function vKatalog(){
   return `<div class="view kview">${bar(T('Seminarkatalog 2027'))}${ktabs('kat')}<div class="pad"><div class="kicker">${T('Zum Durchblättern')}</div><h1 style="font-size:34px;margin-top:8px">${T('Wähle dein Kapitel')}</h1>
    <p class="lead">${T('Seitlich wischen zum Auswählen – nach oben wischen oder antippen zum Öffnen.')}</p></div>
@@ -2491,7 +2461,6 @@ function vAnmeldung(id){const s=id?byId[id]:null;if(id&&!s)return null;const L=s
       <div><i></i><span>${T('<b>Übernachtungen</b> bitte selbst buchen, sofern nicht anders angegeben.')}</span></div>
       <div><i></i><span>${T('<b>Absagen</b> bis spätestens 4 Wochen vorher – sonst wird der volle Betrag fällig. Eine Ersatzperson ist jederzeit möglich.')}</span></div></div></div>
    <div class="reghead rv" style="margin-top:34px"><div class="kicker">${T('Fragen oder Probleme?')}</div><h2>${T('Deine Ansprechpartner')}</h2></div>
-   <div class="igwrap">${igCard()}</div>
    <div class="clist">${contactsFor(s).map(c=>`<div class="cperson glass rv"><div class="cav">${esc(c.n.split(' ').map(x=>x[0]).join('').slice(0,2))}</div><div class="cbody"><div class="cr">${esc(T(c.r))}</div><b>${esc(c.n)}</b><div class="cline">${svg('phone')}<span dir="ltr">${esc(c.t)}</span></div><div class="cline">${svg('mail')}<span class="fit" data-fit="13.5" dir="ltr">${esc(c.m)}</span></div></div></div>`).join('')}</div>
    <div style="height:calc(36px + var(--safe-b))"></div></div></div>`}
 function lvState(){if(!S.lvMode)S.lvMode='kat';const n=S.lvMode==='fresh'?4:3;if(!S.lvSel||S.lvSel>n)S.lvSel=1;return n}
@@ -2506,7 +2475,7 @@ function vLevel(){const n=lvState();
    <div class="lvslide"><input type="range" id="lvr" min="1" max="${n}" step="1" value="${S.lvSel}" aria-label="${T('Level wählen')}"><div class="lvticks">${Array.from({length:n},(_,i)=>`<span class="${i+1===S.lvSel?'on':''}" data-lvs="${i+1}">${S.lvMode==='fresh'?FRESH[i+1].replace('Fresh-',''):T(LEVELS[i+1].n)}</span>`).join('')}</div></div>
    <div id="lvbox">${lvCard()}</div><div style="height:calc(30px + var(--safe-b))"></div></div></div>`}
 function dnavHTML(h){const on=t=>t?' on':'';
-  const L=[['startQuiz','act',T('Schnell finden'),/^(frage-|ergebnis)/.test(h),'bolt'],['startCheck','act',T('Kompetenz-Check'),/^(check|profil)/.test(h),'target'],['seminare','go',T('Stöbern'),/^(seminare|seminar-)/.test(h),'search'],['level','go',T('Die Level'),h==='level','star'],['katalog','go',T('Kataloge'),/^katalog/.test(h),'book'],['fresh-digital','go','Fresh Digital',h==='fresh-digital','flame'],['kontakt','go',T('Anmeldung'),/^(kontakt|anmeldung-)/.test(h),'phone']];
+  const L=[['startQuiz','act',T('Schnell finden'),/^(frage-|ergebnis)/.test(h),'bolt'],['startCheck','act',T('Kompetenz-Check'),/^(check|profil)/.test(h),'target'],['seminare','go',T('Stöbern'),/^(seminare|seminar-)/.test(h),'search'],['level','go',T('Die Level'),h==='level','star'],['katalog','go',T('Kataloge'),/^katalog/.test(h),'book'],['kontakt','go',T('Anmeldung'),/^(kontakt|anmeldung-)/.test(h),'phone']];
   return `<div class="dn-in"><button class="dn-logo" data-act="home" aria-label="${T('Startseite')}"><img src="img/ui/6c1af5a908.png" alt="EDEKA Food Academy"><img class="ht" src="img/ui/6e072e6aa8.png" alt=""></button><div class="dn-links">${L.map(([k,t,l,a])=>`<button class="dn-l${on(a)}" data-${t}="${k}">${l}</button>`).join('')}</div><div class="dn-r">${sndBtn()}${langBtn()}</div></div>`}
 function dnavUpdate(h){const n=document.getElementById('dnav');if(n)n.innerHTML=dnavHTML(h)}
 function render(opt={}){
@@ -2527,7 +2496,6 @@ function render(opt={}){
   else if(h==='kontakt')html=vAnmeldung(null);
   else if(h==='katalog')html=vKatalog();
   else if(h==='katalog-fresh'){html=vKatalogFresh();acc='#EC672F'}
-  else if(h==='fresh-digital'){html=vFreshDigital();acc='#FF8A1F'}
   else if(h.startsWith('seminar-')){html=vDetail(h.slice(8));const s=byId[h.slice(8)];if(s)acc=catOf(s).c}
   else if(h.startsWith('anmeldung-'))html=vAnmeldung(h.slice(10));
   if(html===null){location.replace('#');return}
